@@ -44,7 +44,6 @@ internal class FaceLivenessView(context: Context, id: Int, creationParams: Map<S
                         handler.onComplete()
                     },
                     onError = { error ->
-                        println("FaceLivenessDetector Error: ${error.message}")
                         when (error) {
                             is FaceLivenessDetectionException.SessionNotFoundException -> {
                                 handler.onError("sessionNotFound")
