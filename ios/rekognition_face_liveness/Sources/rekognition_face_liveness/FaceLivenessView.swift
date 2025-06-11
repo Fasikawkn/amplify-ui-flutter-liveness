@@ -73,6 +73,7 @@ struct NativeView: View {
             sessionID: self.sessionId,
             region: self.region,
             isPresented: $isPresentingLiveness,
+            disableStartView: true,
             onCompletion: { result in
                 switch result {
                 case .success:

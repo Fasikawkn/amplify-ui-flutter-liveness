@@ -40,6 +40,7 @@ internal class FaceLivenessView(context: Context, id: Int, creationParams: Map<S
                 FaceLivenessDetector(
                     sessionId = creationParams?.get("sessionId") as String,
                     region = creationParams["region"] as String,
+                    disableStartView = true,
                     onComplete = {
                         handler.onComplete()
                     },
