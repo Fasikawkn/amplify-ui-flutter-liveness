@@ -72,8 +72,8 @@ struct NativeView: View {
         FaceLivenessDetectorView(
             sessionID: self.sessionId,
             region: self.region,
-            isPresented: $isPresentingLiveness,
             disableStartView: true,
+            isPresented: $isPresentingLiveness,
             onCompletion: { result in
                 switch result {
                 case .success:
